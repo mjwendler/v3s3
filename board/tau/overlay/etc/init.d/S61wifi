@@ -47,7 +47,7 @@ stop() {
 	if [ -e $wpa_sup_pidf ]; then
 		kill $(cat $wpa_sup_pidf)
 	fi
-	if [ -e $udhcpc_pidf]; then
+	if [ -e $udhcpc_pidf ]; then
 		kill $(cat $udhcpc_pidf)
 	fi
 	ip link set $itf down
